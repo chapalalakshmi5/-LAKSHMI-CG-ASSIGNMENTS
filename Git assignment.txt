@@ -1,6 +1,6 @@
 Install GIT & make sure it is added into PATH.
 Section 0 -Use GIT as local VCS. Steps to follow:
-1. Create a directory ‘project_dir’ & cd to ‘project_dir’. 
+1. Create a directory â€˜project_dirâ€™ & cd to â€˜project_dirâ€™. 
                                        $ mkdir project dir
                                        $ cd project dir    
            
@@ -9,21 +9,21 @@ Section 0 -Use GIT as local VCS. Steps to follow:
    Intitialized empty git repository in c:/users/Lakshmi/Desktop/gitcommands/.git/
                                
 3. Create a new file index.html.
-> First created empty local repository file.
-> open the text edited and add some files or create a new file.
-> Then  save the file and move it to the folder you just created.
-Example:
-<!DOCTYPE html>
-<html>
-<head>create a file</head>
-<body>
-<h1>Repository<h1>
-<h2>working directory</h2>
-<h3>stagging</h3>
-<h4>commit</h4>
-<p>git is a popular version control system</p>
-</body>
-</html>
+  > First created empty local repository file.
+  > open the text edited and add some files or create a new file.
+  > Then  save the file and move it to the folder you just created.
+  Example:
+   <!DOCTYPE html>
+   <html>
+   <head>create a file</head>
+   <body>
+   <h1>Repository<h1>
+   <h2>working directory</h2>
+   <h3>stagging</h3>
+   <h4>commit</h4>
+   <p>git is a popular version control system</p>
+   </body>
+   </html>
                               Save the above example file as index.html in our created folder.
 
 4. Check the git status. You should find index.html as untracked file.
@@ -38,8 +38,8 @@ Example:
                                   No commits yet
 
                                   Untracked files:
-                                        (use "git add ..." to include in what will be committed)    
-                                            index.html 
+                                        (use "git add ..." to include in what will be committed) Â Â Â 
+                                    Â        index.html 
 
                                     nothing added to commit but untracked files present (use "git add" to track) 
                              Tracked:  The git knows the files and are added to the repository.
@@ -59,13 +59,13 @@ The file should be stagged then check the status.
                             No commits yet
 
                              Changes to be committed:
-    (use "git rm --cached ..." to unstage)     
+  Â Â (use "git rm --cached ..." to unstage) Â Â Â Â 
         new file: index.html 
 
 6. Commit index.html
-> git considers commit as “save point” or change point.
+> git considers commit as â€œsave pointâ€ or change point.
 > when we commit we always include a  message.
-                                         $ git commit -m “first html program”
+                                         $ git commit -m â€œfirst html programâ€
   [master  (root-commit) 659179a] first html program
     1 file changed, 9 insertions(+)
      create mode 100644 Desktop/gitcommands/index.html
@@ -79,8 +79,8 @@ Changed the index.html and create a new file info.txt
                                  No commits yet
 
                                 Untracked files:
-                    (use "git add ..." to include in what will be committed)    
-                          index.html 
+Â Â                   (use "git add ..." to include in what will be committed) Â Â Â 
+                         Â index.html 
                           info.txt
  
                   nothing added to commit but untracked files present (use "git add" to track)
@@ -98,8 +98,8 @@ Changed the index.html and create a new file info.txt
                                   No commits yet
 
                                   Untracked files:
-                                        (use "git add ..." to include in what will be committed)    
-                                            index.html 
+                                        (use "git add ..." to include in what will be committed) Â Â Â 
+                                    Â        index.html 
 
                                     nothing added to commit but untracked files present (use "git add" to track) 
 
@@ -118,7 +118,7 @@ Changed the index.html and create a new file info.txt
                                (use "git rm --cached ..." to unstage)
                                  new file: index.html
                             3) commit the index.html
-                                               $ git commit -m “first html program”
+                                               $ git commit -m â€œfirst html programâ€
 [master  (root-commit) 659179a] first html program
 1 file changed, 9 insertions(+)
 create mode 100644 Desktop/gitcommands/index.html
@@ -211,7 +211,7 @@ $ git reset - - hard HEAD~1
 > This command will make the Git move the pointer of HEAD back to the previous commit.
 > So, your last commit is undone and any files added or changes made are removed
 
-18. Rename ‘add’ command to ‘my-add’.
+18. Rename â€˜addâ€™ command to â€˜my-addâ€™.
 $ git add my-add
 the git add command used add file contents in the index.
 
@@ -227,14 +227,14 @@ the git add command used add file contents in the index.
                                (use "git rm --cached ..." to unstage)
                                  new file: index.html
                             3) commit the index.html
-                                       $ git commit -m “first html program”
+                                       $ git commit -m â€œfirst html programâ€
 [master  (root-commit) 659179a] first html program
 1 file changed, 9 insertions(+)
 create mode 100644 Desktop/gitcommands/index.html
 
 20. Revert the last commit.
-$ revert reset –hard HEAD~ 
-> The revert command will create a commit that reverts the changes of the commit being targeted. 
+$ revert reset â€“hard HEAD~ 
+> TheÂ revertÂ command will create a commit that reverts the changes of the commit being targeted. 
 
 GIT Branching
 Objective: Commit HTML, CSS & JavaScript assignments into GIT. 
@@ -242,9 +242,9 @@ SECTION-1 (HTML assignments) - Steps to follow:
 21. First take a backup of your assignments & projects. This is required because due to incorrect GIT operation you may lose your files.
                                         Ok
 
-22. Create an empty directory ‘Assignments’ & cd to ‘Assignments’.
+22. Create an empty directory â€˜Assignmentsâ€™ & cd to â€˜Assignmentsâ€™.
                                $ cd Assignments
-23. Create a file README.txt inside ‘Assignments’ & write few lines about the contents of ‘Assignments’ folder.
+23. Create a file README.txt inside â€˜Assignmentsâ€™ & write few lines about the contents of â€˜Assignmentsâ€™ folder.
 $ touch README.txt
 24. Commit README.txt file.
                              $ git commit -m"description about git"
@@ -252,22 +252,22 @@ $ touch README.txt
              1 file changed, 1 insertion(+)
              create mode 100644 README.txt
 
-25. Now create a new branch ‘html-assignments’.
-> Now we created a new branch called "htmlassignments”.
+25. Now create a new branch â€˜html-assignmentsâ€™.
+> Now we created a newÂ branchÂ called "htmlassignmentsâ€.
                                    $ git branch htmlassignments 
-> Let's confirm that we have created a new branch:
+> Let's confirm that we have created a newÂ branch:
           $ git branch
     htmlassignments
     *master
  
-26. Switch to ‘html-assignments’ branch.
+26. Switch to â€˜html-assignmentsâ€™ branch.
 > Checkout is a command used to check a branch
 $ git checkout htmlassignments
    Switched to branch 'htmlassignments'
 
-27. Copy all HTML assignments inside ‘Assignments’ folder.
+27. Copy all HTML assignments inside â€˜Assignmentsâ€™ folder.
                               copied
-28. Commit HTML assignments into ‘html-assignments’ branch.
+28. Commit HTML assignments into â€˜html-assignmentsâ€™ branch.
               $  git commit -m"html assignments"
                  [htmlassignments 98270c0] html assignments
                  2 files changed, 17 insertions(+)
@@ -275,7 +275,7 @@ $ git checkout htmlassignments
                   create mode 100644 sample1.html
 
 
-29. Make minor changes into few files belonging to ‘html-assignments’ branch.
+29. Make minor changes into few files belonging to â€˜html-assignmentsâ€™ branch.
                              changed
 30. Commit those changed files.
                             $   git commit -m "git changed data"
@@ -289,11 +289,11 @@ switched to branch master
                                 [master f5220be] modify the commit file
                                   1 file changed, 1 insertion(+), 1 deletion(-)
      
-33. Again switch to ‘html-assignments’ branch.
+33. Again switch to â€˜html-assignmentsâ€™ branch.
        $ git checkout htmlassignments
-switched to branch ‘htmlassignments’ 
+switched to branch â€˜htmlassignmentsâ€™ 
 
-34. Make minor changes into few files belonging to ‘html-assignments’ branch.   
+34. Make minor changes into few files belonging to â€˜html-assignmentsâ€™ branch.   
 Changed  
 35. Commit those changes.
                                  $ git commit -m "modifed htmlassignments"
@@ -302,9 +302,9 @@ Changed
 
 36. Switch to master.
     $ git checkout master
-switched to branch ‘master’
+switched to branch â€˜masterâ€™
 
-37. Merge ‘html-assignments’ branch into master. Confirm all html assignments are shown in master.
+37. Merge â€˜html-assignmentsâ€™ branch into master. Confirm all html assignments are shown in master.
                              $ git merge htmlassignments
                                Merge made by the 'ort' strategy.
                                index.html   | 10 ++++++++++
@@ -315,33 +315,33 @@ switched to branch ‘master’
                                 create mode 100644 sample.html
                                 create mode 100644 sample1.html
 
-38. Finally delete the ‘html-assignments’ branch.
+38. Finally delete the â€˜html-assignmentsâ€™ branch.
                                 $ git branch -d htmlassignments
                                 Deleted branch htmlassignments (was 36ed36c).
-> ‘d’ command was used for delete a branch or a file.
+> â€˜dâ€™ command was used for delete a branch or a file.
 SECTION-2 - (CSS assignments) Steps to follow:
-1. Create a new branch ‘css-assignments’.
+1. Create a new branch â€˜css-assignmentsâ€™.
    $ git branch cssassignments
    $ git branch
 cssassignments
 *master 
                              
-2. Switch to ‘css-assignments’ branch.
+2. Switch to â€˜css-assignmentsâ€™ branch.
                                $ git checkout -b css-assignments
                                Switched to a new branch 'css-assignments'
 > The checkout command used for switching branch to master and master to branch.
 
 
-3. Copy all CSS assignments inside ‘Assignments’ folder.
+3. Copy all CSS assignments inside â€˜Assignmentsâ€™ folder.
                             copied
-4. Commit CSS assignments into ‘css-assignments’ branch.
+4. Commit CSS assignments into â€˜css-assignmentsâ€™ branch.
                               $ git commit -m "commited css assignments"
                               [cssassignments 4bac41d] commited css assignments
                                2 files changed, 17 insertions(+)
                                create mode 100644 sample.css
                                create mode 100644 sample1.css
 
-5. Make minor changes into README.txt file on line 1 belonging to ‘css-assignments’ branch.
+5. Make minor changes into README.txt file on line 1 belonging to â€˜css-assignmentsâ€™ branch.
                               changed
 6. Commit those changed files.
                              $ git commit -m "modified css assignments"
@@ -350,18 +350,18 @@ cssassignments
 
 7. Switch to master branch.
       $ git checkout master
-switched to branch ‘master’
+switched to branch â€˜masterâ€™
 
 8. Make minor changes into README.txt file on line 3 & commit those changes into master.
                              $ git commit -m "modified text"
                              [master 510f56d] modified text
                              1 file changed, 2 insertions(+), 1 deletion(-)
 
-9. Again switch to ‘css-assignments’ branch.
+9. Again switch to â€˜css-assignmentsâ€™ branch.
      $ git checkout cssassignments
-switched to branch ‘cssassignments’
+switched to branch â€˜cssassignmentsâ€™
 
-10. Make minor changes into few files belonging to ‘css-assignments’ branch.
+10. Make minor changes into few files belonging to â€˜css-assignmentsâ€™ branch.
                               changed
 11. Commit those changes.
                               $ git commit -m "modified data"
@@ -372,7 +372,7 @@ switched to branch ‘cssassignments’
     $ git checkout master
 switched to branch 
                            
-13. Merge ‘css-assignments’ branch into master. Confirm all css assignments are shown in master.
+13. Merge â€˜css-assignmentsâ€™ branch into master. Confirm all css assignments are shown in master.
                             $ git merge cssassignments
                             Merge made by the 'ort' strategy.
                              sample.css  |  9 +++++++++
@@ -381,24 +381,24 @@ switched to branch
                               create mode 100644 sample.css
                                create mode 100644 sample1.css
 
-14. Finally delete the ‘css-assignments’ branch.
+14. Finally delete the â€˜css-assignmentsâ€™ branch.
 $ git branch -d cssassignments
 Deleted branch cssassignments (was 35d21ff).
 
 SECTION-3 - (JavaScript assignments) Steps to follow:
-1. Create a new branch ‘js-assignments’.
+1. Create a new branch â€˜js-assignmentsâ€™.
     $ git branch js-assignments
 git branch
 js-assignments
 *master
 
-2. Switch to ‘js-assignments’ branch.
+2. Switch to â€˜js-assignmentsâ€™ branch.
      $ git checkout js-assignments
-switched to branch ‘js-assignments’ 
+switched to branch â€˜js-assignmentsâ€™ 
 
-3. Copy all JavaScript assignments inside ‘Assignments’ folder.
+3. Copy all JavaScript assignments inside â€˜Assignmentsâ€™ folder.
                                copied
-4. Commit JavaScript assignments into ‘js-assignments’ branch.
+4. Commit JavaScript assignments into â€˜js-assignmentsâ€™ branch.
                               $ git commit -m"js assignments"
                               [js-assignments ca0e20d] js assignments
                                4 files changed, 47 insertions(+)
@@ -406,7 +406,7 @@ switched to branch ‘js-assignments’
                                create mode 100644 firstcss.html
                                create mode 100644 firstjs.html
                                 create mode 100644 secondcss.html
-5. Make minor changes into README.txt file on line 1 belonging to ‘js-assignments’ branch    changed
+5. Make minor changes into README.txt file on line 1 belonging to â€˜js-assignmentsâ€™ branch    changed
 6. Commit those changed files.
                               $ git commit -m"modified js assignments"
                                [js-assignments 6640ae2] modified js assignments
@@ -414,18 +414,18 @@ switched to branch ‘js-assignments’
 
 7. Switch to master branch.
       $ git checkout master
-switched to branch ‘master’ 
+switched to branch â€˜masterâ€™ 
 
 8. Make minor changes into README.txt file on line 1 & commit those changes into master.
                              $ git commit -m"modified text assignments"
                               [master 6fd8f9a] modified text assignments
                                1 file changed, 7 insertions(+), 1 deletion(-)
 
-9. Again switch to ‘js-assignments’ branch.
+9. Again switch to â€˜js-assignmentsâ€™ branch.
       $  git checkout js-assignments
-  switched to branch ‘js-assignments’ 
+  switched to branch â€˜js-assignmentsâ€™ 
 
-10. Make minor changes into few files belonging to ‘js-assignments’ branch.
+10. Make minor changes into few files belonging to â€˜js-assignmentsâ€™ branch.
                                changed
 11. Commit those changes.
                             $ git commit -m"modified js assignments"
@@ -433,10 +433,10 @@ switched to branch ‘master’
                              1 file changed, 1 insertion(+)  
 12. Switch to master.
       $ git checkout master
-switched to branch ‘master’ 
-13. Merge ‘js-assignments’ branch into master. Confirm all JavaScript assignments are shown in master.
+switched to branch â€˜masterâ€™ 
+13. Merge â€˜js-assignmentsâ€™ branch into master. Confirm all JavaScript assignments are shown in master.
        $ git merge js-assignments
-14. Finally delete the ‘js-assignments’ branch.
+14. Finally delete the â€˜js-assignmentsâ€™ branch.
                               $ git branch -d js-assignments
               Deleted branch js-assignments (was 8260d60).
 
@@ -456,12 +456,12 @@ SECTION-3 (Pushing assignments to remote repository) - Steps to follow:
 > Click login
 > Account should be login
 
-41. Create new public repository ‘freshersbatch-oct16’.
+41. Create new public repository â€˜freshersbatch-oct16â€™.
 > Click on New repository.
-> Enter repository name’freshers-jan22’
+> Enter repository nameâ€™freshers-jan22â€™
 > Click on public and click on create repository.
 
-42. Commit & push any sample file to this repository under ‘Assignments’ directory.
+42. Commit & push any sample file to this repository under â€˜Assignmentsâ€™ directory.
 $ git remote add origin https://github.com/chapalalakshmi5/freshersbatch-jan22.git
                              $ git push -u origin master
 Enumerating objects: 56, done.
@@ -477,7 +477,7 @@ Branch 'master' set up to track remote branch 'master' from 'origin'.
 
 
 SECTION-4 (Pushing source code to remote repository using Eclipse GIT plugin) - Steps to follow:
-1. One developer from project team will create eclipse projects ‘SampleProj’ & add sample source code files. Then commit all files through eclipse GIT plugin.
+1. One developer from project team will create eclipse projects â€˜SampleProjâ€™ & add sample source code files. Then commit all files through eclipse GIT plugin.
 > Open eclipse IDE  then switch to git perspective.
 >  Select add on existing local repository
 > Then browse the repository folder and add to it.
@@ -485,11 +485,11 @@ SECTION-4 (Pushing source code to remote repository using Eclipse GIT plugin) - 
 
 2. Collaborate other team members with your github account so that they can also modify the committed files. 
 3. Other developers from same team will checkout all files from remote repository. This might get conflicts since certain files fail to merge. In such case, merge it manually.
-4. Commit & push the ‘SampleProj’ project.
+4. Commit & push the â€˜SampleProjâ€™ project.
 > Right click on the project and select team.
 > In that team menu select commit.
 > We get Git stagging view then select commit
 > Then right click on the project and select team
-> In that team menu select push branch ‘master’.
+> In that team menu select push branch â€˜masterâ€™.
 
 
