@@ -24,22 +24,22 @@ Section 0 -Use GIT as local VCS. Steps to follow:
    <p>git is a popular version control system</p>
    </body>
    </html>
-                              Save the above example file as index.html in our created folder.
+          Save the above example file as index.html in our created folder.
 
 4. Check the git status. You should find index.html as untracked file.
-> First In git bash list the files in the directory by using ls command.
+     > First In git bash list the files in the directory by using ls command.
                                               $ ls
-                    index.html
-> Then we see the index.html.
-> Then we check the status of the file by status command
+                                               index.html
+     > Then we see the index.html.
+     > Then we check the status of the file by status command
                                            $ git status
                                               On branch master
 
-                                  No commits yet
+                                               No commits yet
 
-                                  Untracked files:
-                                        (use "git add ..." to include in what will be committed)    
-                                            index.html 
+                                               Untracked files:
+                                              (use "git add ..." to include in what will be committed)    
+                                                index.html 
 
                                     nothing added to commit but untracked files present (use "git add" to track) 
                              Tracked:  The git knows the files and are added to the repository.
@@ -47,52 +47,52 @@ Section 0 -Use GIT as local VCS. Steps to follow:
                                                     Repository.                         
 
 5. Stage the index.html file.
-> When you first add files to an empty repository, they are all untracked. 
-> To get Git to track them, you need to stage them, or add them to the staging environment.
+   > When you first add files to an empty repository, they are all untracked. 
+   > To get Git to track them, you need to stage them, or add them to the staging environment.
         $ git add index.html
-The file should be stagged then check the status. 
+      The file should be stagged then check the status. 
 
 
-                                      $ git status
+                         $ git status
                            On branch master
 
                             No commits yet
 
                              Changes to be committed:
-    (use "git rm --cached ..." to unstage)     
-        new file: index.html 
+                           (use "git rm --cached ..." to unstage)     
+                           new file: index.html 
 
 6. Commit index.html
-> git considers commit as “save point” or change point.
-> when we commit we always include a  message.
+    > git considers commit as “save point” or change point.
+    > when we commit we always include a  message.
                                          $ git commit -m “first html program”
-  [master  (root-commit) 659179a] first html program
-    1 file changed, 9 insertions(+)
-     create mode 100644 Desktop/gitcommands/index.html
+                                           [master  (root-commit) 659179a] first html program
+                                            1 file changed, 9 insertions(+)
+                                           create mode 100644 Desktop/gitcommands/index.html
 
 7. Make few changes in index.html & create a new file info.txt file.
-Changed the index.html and create a new file info.txt
+        Changed the index.html and create a new file info.txt
 8. Check git status. You should find index.html & info.txt as untracked files.
-                                          $ git status
+                             $ git status
                                On branch master
 
                                  No commits yet
 
                                 Untracked files:
-                    (use "git add ..." to include in what will be committed)    
-                          index.html 
-                          info.txt
+                               (use "git add ..." to include in what will be committed)    
+                                index.html 
+                                  info.txt
  
                   nothing added to commit but untracked files present (use "git add" to track)
 
 9. Configure GIT to ignore all txt files.
                                         $ touch .getignore
                                         $ ignore all .txt files
-* *.txt
-           Ignore all text files
+                                          *.txt
+                             Ignore all text files
 
 10. Again check the git status. You should find only index.html as untracked file.
-                                             $ git status
+                               $ git status
                                  On branch master
 
                                   No commits yet
@@ -105,11 +105,11 @@ Changed the index.html and create a new file info.txt
 
 
 11. State & commit index.html
-> When you first add files to an empty repository, they are all untracked.
-> To get Git to track them, you need to stage them, or add them to the staging environment.
+    > When you first add files to an empty repository, they are all untracked.
+    > To get Git to track them, you need to stage them, or add them to the staging environment.
                                         $ git add index.html
                                  The file should be stagged then check the status.
-                                        $ git status
+                           $ git status
                              On branch master
 
                                No commits yet
@@ -119,39 +119,39 @@ Changed the index.html and create a new file info.txt
                                  new file: index.html
                             3) commit the index.html
                                                $ git commit -m “first html program”
-[master  (root-commit) 659179a] first html program
-1 file changed, 9 insertions(+)
-create mode 100644 Desktop/gitcommands/index.html
+                                                 [master  (root-commit) 659179a] first html program
+                                                 1 file changed, 9 insertions(+)
+                                                  create mode 100644 Desktop/gitcommands/index.html
 
 
 
 
 12. Log all your comments so far.
-* $ git log --all
- commit 78d002b549334384252ee05689948426b2770022 (HEAD -> master, origin/master)
-Author: chapalalakshmi5 <chapalalakshmi5@gmail.com>
-Date:   Thu Jan 6 11:21:28 2022 +0530
+       * $ git log --all
+             commit 78d002b549334384252ee05689948426b2770022 (HEAD -> master, origin/master)
+             Author: chapalalakshmi5 <chapalalakshmi5@gmail.com>
+              Date:   Thu Jan 6 11:21:28 2022 +0530
 
-        first html program
+               first html program
 
 
 13. Make some changes in index.html.
-Example:
-<!DOCTYPE html>
-<html>
-<head>create a file</head>
-<body>
-<h1>Repository<h1>
-<h2>working directory</h2>
-<h3>stagging</h3>
-<h4>commit</h4>
-<p>git is a popular version control system</p>
-<p>make some changes in index.html</p>
-</body>
-</html>
+    Example:
+    <!DOCTYPE html>
+    <html>
+    <head>create a file</head>
+     <body>
+     <h1>Repository<h1>
+     <h2>working directory</h2>
+     <h3>stagging</h3>
+     <h4>commit</h4>
+     <p>git is a popular version control system</p>
+      <p>make some changes in index.html</p>
+      </body>
+      </html>
                               Add another paragraph.
 14. Revert the change made in the previous step using git command.
-* $ git log
+  * $ git log
 commit ed4998622308b2b6f804dd47dd22aea23079ee2c (HEAD -> master)
 Author: chapalalakshmi5 <chapalalakshmi5@gmail.com>
 Date:   Thu Jan 6 14:55:19 2022 +0530
@@ -196,24 +196,24 @@ Date:   Thu Jan 6 14:31:18 2022 +0530
 
 16. Stage index.html
              $  git status
-On branch master
+               On branch master
 
-No commits yet
+               No commits yet
 
-Untracked files:
-(use "git add ..." to include in what will be committed)
-index.html
+               Untracked files:
+               (use "git add ..." to include in what will be committed)
+                index.html
 
-nothing added to commit but untracked files present (use "git add" to track)
+                nothing added to commit but untracked files present (use "git add" to track)
 
 17. Revert back the last stage.
-$ git reset - - hard HEAD~1
-> This command will make the Git move the pointer of HEAD back to the previous commit.
-> So, your last commit is undone and any files added or changes made are removed
+        $ git reset - - hard HEAD~1
+       > This command will make the Git move the pointer of HEAD back to the previous commit.
+       > So, your last commit is undone and any files added or changes made are removed
 
 18. Rename ‘add’ command to ‘my-add’.
-$ git add my-add
-the git add command used add file contents in the index.
+      $ git add my-add
+      the git add command used add file contents in the index.
 
 19. Using my_add command Stage index.html again & commit the changes.
                             $   git  my-add index.html
@@ -228,13 +228,13 @@ the git add command used add file contents in the index.
                                  new file: index.html
                             3) commit the index.html
                                        $ git commit -m “first html program”
-[master  (root-commit) 659179a] first html program
-1 file changed, 9 insertions(+)
-create mode 100644 Desktop/gitcommands/index.html
+                                         [master  (root-commit) 659179a] first html program
+                                         1 file changed, 9 insertions(+)
+                                          create mode 100644 Desktop/gitcommands/index.html
 
 20. Revert the last commit.
-$ revert reset –hard HEAD~ 
-> The revert command will create a commit that reverts the changes of the commit being targeted. 
+     $ revert reset –hard HEAD~ 
+     > The revert command will create a commit that reverts the changes of the commit being targeted. 
 
 GIT Branching
 Objective: Commit HTML, CSS & JavaScript assignments into GIT. 
@@ -245,7 +245,7 @@ SECTION-1 (HTML assignments) - Steps to follow:
 22. Create an empty directory ‘Assignments’ & cd to ‘Assignments’.
                                $ cd Assignments
 23. Create a file README.txt inside ‘Assignments’ & write few lines about the contents of ‘Assignments’ folder.
-$ touch README.txt
+      $ touch README.txt
 24. Commit README.txt file.
                              $ git commit -m"description about git"
              [master (root-commit) d9bded4] description about git
