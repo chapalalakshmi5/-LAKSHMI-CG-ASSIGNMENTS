@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.lang.String;
 
 
-public abstract class savingsaccount {
+public  class savingsaccount {
 	
 	public static void main(String[] args)throws  InsufficientBalanceException, IllegalBankTransactionException
 	{
