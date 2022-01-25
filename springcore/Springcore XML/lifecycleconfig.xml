@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/scema/context"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ <bean class="com.springcore.beanlifecycle" name="book" init-method="BookAuthor" destroy-method="BookStatus">
+ <property name="bookname" value="The Power of your Subconscious Mind">
+ </property>
+ <property name="bookprice" value="500"></property>
+ </bean>
+ </beans>
